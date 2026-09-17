@@ -103,6 +103,50 @@ a {
   opacity: 0.9;
 }
 
+.wallet-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.wallet-status {
+  min-height: 43px;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.wallet-network {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #8f96ad;
+}
+
+.wallet-address {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.wallet-error {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 10;
+  width: 260px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 100, 100, 0.25);
+  border-radius: 9px;
+  background: #171016;
+  color: #ff9b9b;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
 main {
   width: 100%;
   flex: 1;
@@ -137,8 +181,6 @@ main {
   font-size: 1.15rem;
   line-height: 1.7;
 }
-
-/* Network selector */
 
 .network-selector {
   width: min(560px, 100%);
@@ -190,8 +232,6 @@ main {
   letter-spacing: 0.08em;
   color: #8f96ad;
 }
-
-/* Token form */
 
 .token-form {
   width: min(560px, 100%);
@@ -253,8 +293,6 @@ main {
   width: 100%;
   margin-top: 5px;
 }
-
-/* Network information */
 
 .networks {
   width: min(1000px, 90%);
@@ -323,5 +361,10 @@ main {
 
   .token-form {
     padding: 22px;
+  }
+
+  .wallet-status {
+    width: 100%;
+    justify-content: center;
   }
 }
