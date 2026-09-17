@@ -1,4 +1,5 @@
 import React from "react";
+import WalletButton from "./components/WalletButton";
 
 function App() {
   return (
@@ -12,13 +13,11 @@ function App() {
           <a href="#about">About</a>
         </nav>
 
-        <button className="connect-button">
-          Connect Wallet
-        </button>
+        <WalletButton />
       </header>
 
       <main>
-        <section className="hero">
+        <section className="hero" id="launch">
           <p className="eyebrow">TOKEN LAUNCHPAD</p>
 
           <h1>
@@ -30,7 +29,10 @@ function App() {
             through NXT PAD.
           </p>
 
-          <button className="launch-button">
+          <button
+            type="button"
+            className="launch-button"
+          >
             Create a Token
           </button>
         </section>
