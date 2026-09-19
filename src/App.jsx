@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react";\n\nconst NXT_LOGO = "https://raw.githubusercontent.com/NXTPAD/NXTPAD/main/assets/img/ChatGPT%20Image%20Sep%2019,%202026,%2003_49_14%20PM.png";
 import WalletButton from "./components/WalletButton";
 import NetworkSelector from "./components/NetworkSelector";
 import TokenForm from "./components/TokenForm";
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <div className="logo">NXT PAD</div>
+        <div className="logo"><img src={NXT_LOGO} alt="" /> <span>NXT PAD</span></div>
 
         <nav className="nav">
           <a href="#launch">Launch</a>
