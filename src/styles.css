@@ -376,3 +376,16 @@ main {
     justify-content: center;
   }
 }
+
+
+/* Unified NXT cloud logo + animated orbital rings */
+.logo{display:flex;align-items:center;gap:12px;position:relative;overflow:visible}
+.logo-orbit{width:46px;height:46px;display:grid;place-items:center;position:relative;flex:none}
+.logo-orbit::before,.logo-orbit::after{content:"";position:absolute;left:50%;top:50%;border:1px solid rgba(40,180,255,.72);border-radius:50%;pointer-events:none;box-shadow:0 0 12px rgba(0,150,255,.35)}
+.logo-orbit::before{width:68px;height:24px;transform:translate(-50%,-50%) rotate(-18deg);animation:nxtPadOrbit 7s linear infinite}
+.logo-orbit::after{width:60px;height:20px;transform:translate(-50%,-50%) rotate(24deg);animation:nxtPadOrbitReverse 9s linear infinite}
+.logo-orbit img{width:46px;height:46px;object-fit:contain;position:relative;z-index:2;filter:drop-shadow(0 0 10px rgba(0,160,255,.55))}
+@keyframes nxtPadOrbit{to{transform:translate(-50%,-50%) rotate(342deg)}}
+@keyframes nxtPadOrbitReverse{to{transform:translate(-50%,-50%) rotate(-336deg)}}
+@media(max-width:700px){.logo{width:auto;justify-content:center}.logo-orbit{width:42px;height:42px}.logo-orbit img{width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){.logo-orbit::before,.logo-orbit::after{animation:none}}
