@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <div className="logo">NXT PAD</div>
+        <div className="logo"><span className="logo-orbit"><img src="/nxt-logo.svg" alt="" /></span><span>NXT PAD</span></div>
 
         <nav className="nav">
           <a href="#launch">Launch</a>
