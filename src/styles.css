@@ -376,3 +376,8 @@ main {
     justify-content: center;
   }
 }
+
+
+/* Exact NXT master logo */
+.logo { display: inline-flex; align-items: center; gap: 10px; }
+.logo img { width: 42px; height: 42px; object-fit: contain; }
